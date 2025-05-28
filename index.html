@@ -56,18 +56,18 @@
         }
         
         .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid transparent;
+            width: 350px;
+            height: 450px;
+            padding: auto;
+            border: 5px solid transparent;
             background: 
                 linear-gradient(var(--bg-dark), var(--bg-dark)) padding-box,
                 linear-gradient(45deg, var(--diamond-gold), var(--diamond-blue), var(--diamond-pink)) border-box;
             margin-bottom: 20px;
             box-shadow: var(--diamond-shadow);
             position: relative;
-            overflow: hidden;
+            animation: diamondShine 5s infinite rotate;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         
         .profile-pic::before {
@@ -154,16 +154,16 @@
         }
 
         h1::before {
-            animation: glitch-effect 3s infinite linear alternate-reverse;
+            animation: glitch-effect 5s infinite linear alternate-reverse;
             left: 2px;
             text-shadow: -2px 0 #1b191b;
             clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
         }
 
         h1::after {
-            animation: glitch-effect 2s infinite linear alternate-reverse;
+            animation: glitch-effect 4s infinite linear alternate-reverse;
             left: -2px;
-            text-shadow: -2px 0 #00ffff;
+            text-shadow: -2px 0 #1408084a;
             clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
         }
 
@@ -344,8 +344,8 @@
             }
             
             .profile-pic {
-                width: 120px;
-                height: 120px;
+                width: 150px;
+                height: 250px;
             }
             
             .diamond-btn {
@@ -368,13 +368,13 @@
 <body>
     <div class="container">
         <div class="profile">
-            <img src="https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Artist" class="profile-pic">
+            <img src="images/breiquelprofilepic.jpeg" alt="Artist" class="profile-pic">
             <h1 data-text="BREIQUEL">BREIQUEL</h1>
             <p class="bio">Official Links • New Music Out Now!</p>
         </div>
         
         <div class="links">
-            <a href="#" class="diamond-btn">
+            <a href="https://open.spotify.com/artist/7CfbhkYpD5UTsKraXMs2KN?si=31GdN8__RqOfyZ0LkDXX9g" class="diamond-btn">
                 <div class="btn-icon"><i class="fab fa-spotify"></i></div>
                 <div class="btn-text">Spotify</div>
                 <div class="btn-arrow"><i class="fas fa-chevron-right"></i></div>
@@ -386,19 +386,19 @@
                 <div class="btn-arrow"><i class="fas fa-chevron-right"></i></div>
             </a>
             
-            <a href="#" class="diamond-btn">
+            <a href="https://youtube.com/@breiquel?si=my1ZXAWTM8wChJ0e" class="diamond-btn">
                 <div class="btn-icon"><i class="fab fa-youtube"></i></div>
                 <div class="btn-text">YouTube</div>
                 <div class="btn-arrow"><i class="fas fa-chevron-right"></i></div>
             </a>
             
-            <a href="#" class="diamond-btn">
+            <a href="https://www.instagram.com/breiquel?igsh=MTB0ZzI3OTR3cm56cw%3D%3D&utm_source=qr" class="diamond-btn">
                 <div class="btn-icon"><i class="fab fa-instagram"></i></div>
                 <div class="btn-text">Instagram</div>
                 <div class="btn-arrow"><i class="fas fa-chevron-right"></i></div>
             </a>
             
-            <a href="#" class="diamond-btn">
+            <a href="https://www.tiktok.com/@breiquel?_t=ZT-8wjiCgk9O5y&_r=1" class="diamond-btn">
                 <div class="btn-icon"><i class="fab fa-tiktok"></i></div>
                 <div class="btn-text">TikTok</div>
                 <div class="btn-arrow"><i class="fas fa-chevron-right"></i></div>
